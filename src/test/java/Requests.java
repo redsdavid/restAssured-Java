@@ -39,7 +39,6 @@ public class Requests {
         .then()
                 .log().all()
                 .statusCode(201)
-                // .assertThat().body(matchesJsonSchemaInClasspath("createUserSchema.json"));
                 .assertThat().body(matchesJsonSchemaInClasspath("createUser.json"));
 
     }
